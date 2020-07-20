@@ -16,8 +16,3 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: 'sc-arm-pipeline-deploy'
-    appName: 'PipelineDeploy'
-    package: $(System.DefaultWorkingDirectory)/**/*.zip
