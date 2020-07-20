@@ -18,6 +18,6 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '<Azure service connection>'
-    appName: '<Name of web app>'
+    azureSubscription: 'sc-arm-pipeline-deploy'
+    appName: 'PipelineDeploy'
     package: $(System.DefaultWorkingDirectory)/**/*.zip
